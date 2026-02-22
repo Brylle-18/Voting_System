@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: background 0.4s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    background: #f5f7fa;
+    border-radius: 12px;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: 0.1s ease;
+    border: 1px solid transparent;
+}
+
+.option:hover {
+    background: rgb(43,232,43);
+    border: 1px solid black;
+}
+
+.option:active {
+    background:white;
+}
+
+.option input {
+    margin-right: 12px;
+    transform: scale(1.2);
+}
+
+.option span {
+    font-size:16px;
+    color:#333;
+    font-weight:500;
+}
+
+.vote-btn {
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    border-radius:12px;
+    background:#1bf917;
+    color:black;
+    font-size:16px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+.vote-container {
+    position: relative;
+}
+
+.results-link {
+    margin-top:15px;
+}
+
+.results-link a {
+    text-decoration:none;
+    font-size:14px;
+    color:#1bf917;
+    font-weight:bold;
+}
+
+.results-link a:hover {
+    text-decoration:underline;
+}
+
+.footer {
+    display:block;
+    justify-content:center;
+    align-items:center;
+    height:50px;
+    color:#4e514e;
+}
+
+.cplusplus {
+    position: relative;
+    overflow: hidden;
+}
+
+.cplusplus .real-text,
+.cplusplus .hover-text {
+    font-size:16px;
+    color:#333;
+    font-weight:500;
+    transition: all 0.2s ease;
+}
+
+.cplusplus .hover-text {
+    position: absolute;
+    left:42px;
+    opacity:0;
+    transform: translateY(10px);
+    color:black;
+}
+
+.cplusplus:hover .real-text {
+    opacity:0;
+    transform: translateY(-10px);
+}
+
+.cplusplus:hover .hover-text {
+    opacity:1;
+    transform: translateY(0);
+}
+
+.voting-body {
+    background: linear-gradient(135deg, #1df619, #b1ea37);
+}
+
+.voting-body:has(input[value="Python"]:checked),
+.voting-body:has(input[value="C++"]:checked):has(input[name="cplus_hover"]:checked) {
+    background: linear-gradient(135deg, #1df619, #b1ea37);
+}
+
+.voting-body:has(input[value="Java"]:checked),
+.voting-body:has(input[value="JavaScript"]:checked) {
+    background: linear-gradient(135deg, #ff4d4d, #ff0000);
+}
+
+.voting-body:has(input[value="C++"]:checked) {
+    background: linear-gradient(135deg, #ff4d4d, #ff0000);
+}
+
+.voting-body:has(.cplusplus:hover input[value="C++"]:checked) {
+    background: linear-gradient(135deg, #1df619, #b1ea37);
+}
+
+#submit-btn {
+    width: 100%;  
+    height: auto;   
+    transition: none; 
+}
