@@ -134,7 +134,7 @@ session_start();
 
 <div id="memePopup" class="meme-popup">
   <div class="meme-content">
-    <img src="therock.jpg" alt="Rock Eyebrow Meme">
+    <img src="lmao.jpg" alt="Rock Eyebrow Meme">
     <p>Wrong answer detected :]</p>
   </div>
 </div>
@@ -165,7 +165,7 @@ let chaseTime = 0;
 const MAX_CHASE_TIME = 10000;
 
 let idleTimer = null;
-const IDLE_TIME = 15000;
+const IDLE_TIME = 10000;
 
 const gravityComponents = [card, umContainer, cceContainer];
 
