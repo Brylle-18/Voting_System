@@ -166,7 +166,19 @@ h1 {
 }
 
 #submit-btn {
-    width: 100%;  
-    height: auto;   
-    transition: none; 
+    width: 100%;         
+    max-width: 150px;     
+    height: 45px;         
+    transition: none;       
+    font-size: 16px;     
+}
+
+.um-logo-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center; 
+  gap: 10px;       
+  z-index: 10000;
 }
